@@ -1,3 +1,8 @@
 1. git status  -> it will show status in our current repository
 2. git init    -> this will initiate a new repository. This is something we do once per project. Initialize the repo in the top-level folder containing our project.
+3. git add file1 file2 file3   -> it adds specific files to the stagng area. We can separate files with spaces to add multiple files at once.
+4. git commit  -> we use this command to actually commit changes from the staging area. When making a commit, we need to provide a commit message that summarizes the changes and work snapshotted in the commit
+5. git commit -m 'This is a message we provide during commit'  -> this is a way of commiting the changes
+
+
 
