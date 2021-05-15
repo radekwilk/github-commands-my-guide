@@ -4,12 +4,13 @@
 
 3. git add file1 file2 file3   -> it adds specific files to the stagng area. We can separate files with spaces to add multiple files at once.
 
-4. git commit  -> we use this command to actually commit changes from the staging area. When making a commit, we need to provide a commit message that summarizes the changes and work snapshotted in the commit
+4. git add .  -> this adds to stage all changes at once
 
-5. git commit -m 'This is a message we provide during commit'  -> this is a way of commiting the changes
+5. git commit  -> we use this command to actually commit changes from the staging area. When making a commit, we need to provide a commit message that summarizes the changes and work snapshotted in the commit
 
-6. git log  -> it just print info about all commits
+6. git commit -m 'This is a message we provide during commit'  -> this is a way of commiting the changes
 
+7. git log  -> it just print info about all commits
 
-
+8. 
 
