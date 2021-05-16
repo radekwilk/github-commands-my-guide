@@ -21,5 +21,7 @@
    For examplem, this command is for VS Code:
    git config --global core.editor "code --wait"
 
+10. git log --oneline  -> it will display all commints in more readable format
+
 
 
