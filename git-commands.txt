@@ -12,5 +12,8 @@
 
 7. git log  -> it just print info about all commits
 
-8. 
+8. IF WE DO MISTAKE AND do git commit, we can end up in default VIM editior. 
+     - to type anything, click letter I to get -INSERT- mode (I for insert)
+     - to get out of it, click esc first, to get out of -INSERT- mode
+     - then we have to enter this three buttons  :wq    (w-write, q-quit)
 
