@@ -1,3 +1,6 @@
+GIT COMMANDS
+==================================================================
+
 1. git status  -> it will show status in our current repository
 
 2. git init    -> this will initiate a new repository. This is something we do once per project. Initialize the repo in the top-level folder containing our project.
@@ -23,5 +26,5 @@
 
 10. git log --oneline  -> it will display all commints in more readable format
 
-
+11. Amending Commits - if we just made a commit and then realized thet we forgot to include a file! Or, maybe we made a typo in the commit message that we want to correct. Rather than making a brand new separate commit, we can "redo" the previous commit using the --amend option
 
