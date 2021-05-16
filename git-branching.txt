@@ -1,0 +1,22 @@
+                    CONTEXT
+===================================================
+
+On large projects, we often work in multiple contexts:
+    1. We're working on 2 different color scheme variations for our website at the same time, unsure of which we like best.
+
+    2. We're also trying to fix a horrible bug, but it's proving tough to solve. We need to really hunt around and toggle some code on and off to figure it out.
+
+    3. A teammate is also working on adding a new chat widget to present at the next meeting. It's unclear if our company will be using it.
+
+    4. Another coworker is updating the search bar autocomplete.
+
+    5. Another developer is doing an experimental radical design overhaul of the entire layout to present next month.
+
+                    BRANCHES 
+=========================================================
+
+Branches are alternative timelines for a project.
+
+They enable us to create separate context where we can try new things, or even work on multiple ideas in parallel
+
+I we make changes on one branch, they do not impact the other branches (unless we merge the changes)
