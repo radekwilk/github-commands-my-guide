@@ -17,3 +17,9 @@
      - to get out of it, click esc first, to get out of -INSERT- mode
      - then we have to enter this three buttons  :wq    (w-write, q-quit)
 
+9. If we want to add longer commnt messages, we need to configure git to open our editor of choice
+   For examplem, this command is for VS Code:
+   git config --global core.editor "code --wait"
+
+
+
