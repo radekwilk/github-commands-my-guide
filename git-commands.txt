@@ -13,22 +13,24 @@ GIT COMMANDS
 
 6. git commit -m 'This is a message we provide during commit'  -> this is a way of commiting the changes
 
-7. git log  -> it just print info about all commits
+7. git -a -m 'Commit comments'  -> this is a shorthand for add and commit. It will commit all unstaged changes, without using add command.
 
-8. IF WE DO MISTAKE AND do git commit, we can end up in default VIM editior. 
+8. git log  -> it just print info about all commits
+
+9. IF WE DO MISTAKE AND do git commit, we can end up in default VIM editior. 
      - to type anything, click letter I to get -INSERT- mode (I for insert)
      - to get out of it, click esc first, to get out of -INSERT- mode
      - then we have to enter this three buttons  :wq    (w-write, q-quit)
 
-9. If we want to add longer commnt messages, we need to configure git to open our editor of choice
+10. If we want to add longer commnt messages, we need to configure git to open our editor of choice
    For examplem, this command is for VS Code:
    git config --global core.editor "code --wait"
 
-10. git log --oneline  -> it will display all commints in more readable format
+11. git log --oneline  -> it will display all commints in more readable format
 
-11. Amending Commits - if we just made a commit and then realized thet we forgot to include a file! Or, maybe we made a typo in the commit message that we want to correct. Rather than making a brand new separate commit, we can "redo" the previous commit using the --amend option
+12. Amending Commits - if we just made a commit and then realized thet we forgot to include a file! Or, maybe we made a typo in the commit message that we want to correct. Rather than making a brand new separate commit, we can "redo" the previous commit using the --amend option
 
-12. Ignoring files  -> use of .gitignore  
+13. Ignoring files  -> use of .gitignore  
     Inside repository, we create a file called .gitignore. Inside the file, we can write patterns to tell Git which files and folders to igonre:
     - ignoreThisFile.doc => it will ignore this specific file name;
     - folderName/ => will ignore an entire directory
@@ -38,5 +40,3 @@ GIT COMMANDS
     gitignore.io 
     Or
     https://www.toptal.com/developers/gitignore
-
-
