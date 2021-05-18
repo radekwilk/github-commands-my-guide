@@ -30,6 +30,8 @@ GIT COMMANDS
 
 12. Amending Commits - if we just made a commit and then realized thet we forgot to include a file! Or, maybe we made a typo in the commit message that we want to correct. Rather than making a brand new separate commit, we can "redo" the previous commit using the --amend option
 
+git commit --amend -m "New commit message."   -> it will amend last commit comment
+
 13. Ignoring files  -> use of .gitignore  
     Inside repository, we create a file called .gitignore. Inside the file, we can write patterns to tell Git which files and folders to igonre:
     - ignoreThisFile.doc => it will ignore this specific file name;
