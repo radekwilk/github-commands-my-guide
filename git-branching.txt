@@ -61,6 +61,10 @@ Use git switch with a -c flag to create a new branch AND switch to it all in one
 
 git switch -c <branch-name>    -> it will create new branch and switch to it
 
+or we can do it the old way:
+
+git checkout -b <branch-name>   -> it will create new branch and checkout to it
+
                                 DELATE A BRANCH
 ==================================================================================
 
