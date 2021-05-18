@@ -28,6 +28,7 @@ Use git branch t view your existing branches. The default branch in every git re
 Current branch always will have * next to it
 
 git branch  -> this will show us all branches in our repo
+git branch -v   -> this will show us all branches in our repo, with latest commint info
 
                     CREATING BRANCHES
 ================================================================
@@ -70,5 +71,29 @@ git branch -D <branch-name>   -> it will detale the branch even if not merged. I
                                 RENAME A BRANCH
 ==================================================================================
 
-git branch -m (or git branch --move)   -> to be able to rename the branch, we have to switch (be in the branch we want to rename) to the branch which we want to rename
+git branch -m (or git branch --move)   -> to be able to rename the branch, we have to switch (be in the branch we want to rename) to the branch which we want to rename.
 
+
+                                MERGING
+==================================================================================
+
+The merge command can be consfusing sometimes. Things to remember:
+   - we merge branches, not specific commits
+   - we alays merge to the current HEAD branch
+
+To merge, follow these basic steps:
+1. Switch to or checkout the branch we want to merge to changes into (the receiving branch)
+2. Use the git merge command to merge changes from a specific branch into the current branch.
+
+    - git switch master
+    - git merge <branch-to-merge>
+
+                                RESOLVING MERGING CONFLICTS
+==================================================================================
+
+Whenever we encounter merge conflicts. The content from the branch you traying to merge from is displayed between the ========== and >>>>>>>>> symbols. Follow these steps to resolve them:
+
+1. Open up the file(s) with merge conflicts
+2. Edit the file(s) to remove the conflicts. Decide which branch's content you want to keep in each conflict. Or keep the content from branch.
+3. Remove the conflict "markers" in the document
+4. Add your changes and then make a commit
