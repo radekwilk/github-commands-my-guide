@@ -8,3 +8,33 @@ The git checkout command is like a Git Swiss Army knife. Many developers think i
 
 We can use checkout to create branches, switch to new branches, restore files and undo history.
 
+Examples:
+
+git checkout commit <commit-hash>  -> this will allow us to view commit with <commit-hash>
+
+We can use git log command to view commit hashes. We just need the first 7 digits of a commit hashes.
+
+Please do not pannic when you see this message:
+Note: switching to '3e9124c'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 3e9124c update stash commands
+
+
+to get back to the branch, we can use git switch <branch-name> to be back to normal state of the HEAD.
+
+
