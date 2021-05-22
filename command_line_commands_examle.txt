@@ -1,0 +1,21 @@
+1.  ls  -> (list), it displays content of current directory
+
+    ls with flags:
+    ls -a  -> it will show all files, including hidden files
+
+2. start .   -> it will open explorer winow in current directory
+3. ls folderName  -> it will show what is inside folder folderName
+4. pwd  -> it prints out current directory (print working directory)
+5. cd  -> change directory
+6. cd folderName  -> will move out location to folder named folderName
+7. cd ..  -> going back one level (going out of the current folder one level)
+8. touch fileName.txt  -> this will create new file named fileName.txt
+9. touch file1.txt file2.js file3.pdf file4.xdoc  -> this will create mulitple files
+10. touch Folder/fileName.txt  -> it will create file fileName in Folder
+11. mkdir NewFolder  ->  this will create new folder, called NewFolder
+12. rm fileName.txt -> remove file fileName.txt (it delates it permamently). It removes files only
+13. rm -rf FolderName  -> it will remove folder called FolderName
+
+
+
+
