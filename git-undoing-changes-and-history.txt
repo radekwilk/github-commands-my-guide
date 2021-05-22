@@ -46,3 +46,25 @@ We have a couple of options:
 2. Leave and go back to wherever we were before - reattach the HEAD
 3. Create a new branch and switch to it. We can now make and save changes, since HEAD is no longer detached. 
 
+
+                                CHECKOUT HEAD~
+=========================================================================
+git checkout supports a slightly odd syntax for referencing previous commits relative to a particular commit.
+
+HEAD~1 refers to the commit before HEAD (parent)
+HEAD~2 refers to 2 commits before HEAD (grandparent) and so on...., for example:
+
+git checkout HEAD~1
+     or
+git checkout HEAD~2
+
+
+                                DISCARDING CHANGES
+=========================================================================
+Suppose we've made some changes to a file but don't want to keep them. To revert the file back to whatever it looked like when we last commited, we can use:
+
+git checkout HEAD <filename>  -> it will discard any changes in then file, reverting back to the HEAD
+
+
+
+
