@@ -1,0 +1,47 @@
+                            STASHING - OVERVIEW
+=========================================================================
+
+Git provides an easy way of stashing these uncommited chnages so that we can return to them later, without having to make unnecessary commits.
+
+Git stash is super useful command that helps us save changes that we are not yet ready to commit. We can stash chnages and then come back to them later.
+
+Running git stash will take all uncommited chnages (staged and unstaged) ans stash them, reverting the chnages in our workig copy.
+
+                            STASH SAVE and STASH POP
+=========================================================================
+
+git stash or git stash save    -> it will stash (save) away staged and unstaged changes 
+
+git stash pop   -> it will remove the most recently stashed changes in our stash and re-apply them to our working copy.
+
+                            STASH APPLY
+=========================================================================
+
+git stash apply   -> We can use git stash apply to apply whatever is stashed away, without removing it from the stash. This can be useful if we want to apply stashed changes to multile branches.
+
+                            STASHING MULTIPLE TIMES
+=========================================================================
+We can add multiple stashes onto the stack of stashes. They will all be stashed in the order you added them. 
+
+git stash
+    ...do somethhing here
+git stash
+    ...do somethhing here
+git stash
+    ...do somethhing here
+
+git stash list   -> it will display list of all stashes.
+
+
+git stash apply stash@{2}  -> this will select which stash we want to apply (index is used from stash list)
+
+                                DROPPING STASHES
+=========================================================================
+git stash drop stash@{stash-id}   -> this will delate a particular stash by using {stash-id} found in git stash list
+
+git stash clear   -> to clear out all stashes, we need to run this command
+
+
+
+
+
