@@ -1,0 +1,10 @@
+                                UNDOING CHNAGES AND HISTORY
+=========================================================================
+
+
+                                CHECKOUT
+=========================================================================
+The git checkout command is like a Git Swiss Army knife. Many developers think it's overloaded, which is what lead to the addition to the git switch and git restore commands.
+
+We can use checkout to create branches, switch to new branches, restore files and undo history.
+
