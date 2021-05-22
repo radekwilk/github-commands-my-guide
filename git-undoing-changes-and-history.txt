@@ -37,4 +37,12 @@ HEAD is now at 3e9124c update stash commands
 
 to get back to the branch, we can use git switch <branch-name> to be back to normal state of the HEAD.
 
+                                DETACHED HEAD
+=========================================================================
+We do not need to panic when this happens! It is not a bad thing.
+
+We have a couple of options:
+1. Stay in detached HEAD to examine the contentof the old commit. Poke around, view the files, etc.
+2. Leave and go back to wherever we were before - reattach the HEAD
+3. Create a new branch and switch to it. We can now make and save changes, since HEAD is no longer detached. 
 
