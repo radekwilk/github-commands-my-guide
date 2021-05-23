@@ -65,6 +65,46 @@ Suppose we've made some changes to a file but don't want to keep them. To revert
 
 git checkout HEAD <filename>  -> it will discard any changes in then file, reverting back to the HEAD
 
+or we can use another command doing the same thing:
+git checkout -- <filename>
+
+
+                                RESTORE
+=========================================================================
+
+git restore  -> it is a brand new Git command that helps with undoing operations.
+
+Beacuse it is so new, most of the existing Git tutorials and books do not mention it, but it is worth knowing.
+
+Recall that git checkout does a million different things, which many git users find very confusing. git restore was introduced alongside git switch as alternatives to some of the uses of checkout.
+
+                                Unmodifying files with RESTORE
+=========================================================================
+Suppose we've made some chnages t oa file since our last commit. We've saved the file but then realize we definetely do NOT want those changes anymore!
+
+To restore the file to the contents in the HEAD, use git restore <file-name>  =>!!! This is 'undoable' command. If we have uncommited changes in the file , they will be lost.
+
+git restore <file-name> restores using HEAD as the default source, but we can change that using the --source option.
+
+For example, git restore --source HEAD~1 <file-name> will restore the contents of file-name to its state from the commit prior to HEAD. You can also use a particular commit hash as the source.
+
+git restore --source HEAD~2 <file-name>  -> two commits prior to HEAD, and so on...
+
+
+                                UNSTAGING FILES WITH RESTORE
+=========================================================================
+
+If we have accidently added a file to our staging area with git add and we don't wish to include it in the next commit, we can use git restore to remove it from staging. We can use --staged option like this:
+
+git restore --staged <file-name>
+
+                                    GIT RESET
+=========================================================================
+Suppose we've just made a couple of commits on the master branch, but we actually meant to make them on separate branch instead. To undo these commits, we can use git reset.
+
+git reset <commit-hash>  -> this will reset the repo back to a specific commit. The commits are gone. 
+
+
 
 
 
