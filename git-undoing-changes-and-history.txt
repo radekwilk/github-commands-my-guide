@@ -105,6 +105,13 @@ Suppose we've just made a couple of commits on the master branch, but we actuall
 git reset <commit-hash>  -> this will reset the repo back to a specific commit. The commits are gone. 
 
 
+                                    GIT RESET --HARD
+=========================================================================
+If we want to undo both the commits and the actual chnages in our files, we can use the --hard option.
+for example, git reset --hard HEAD~1 will delate the last commit and associated changes.
+
+git reset --hard <commit>
+
 
 
 
