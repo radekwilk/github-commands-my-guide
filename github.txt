@@ -1,0 +1,6 @@
+                            CLONING
+============================================================
+So far we've created our own Git repositories from scratch, but often we want to get a local copy of an existing repository instead.
+
+To do this, we can clone a remote repository hosted on Github or similar websites. All we need is a URL that we can tell Git to close for use.
+
