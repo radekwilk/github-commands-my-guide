@@ -4,3 +4,9 @@ So far we've created our own Git repositories from scratch, but often we want to
 
 To do this, we can clone a remote repository hosted on Github or similar websites. All we need is a URL that we can tell Git to close for use.
 
+To clone the repo, simply run git clone <url>
+
+git clone <url>  -> Git will retrive all the files associated with the repository and will copy them to our local machine.
+
+In addition, Git initializes a new repository on our machine, giving us access to the full Git history of the cloned project.
+
