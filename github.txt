@@ -20,3 +20,45 @@ Follow Github docs to do so
 To view any existing remotes for our repository, we can run git remote or git remote -v (verbose, for more info)
 
 This just dsiplays a list of remotes. If we haven't added any remotes yes, we will not see anything
+
+                        OPTION 1 - Existing Repo
+============================================================
+If we already have an exisiting repo locally that we want to get on Github...
+1. Create a new repo on Github
+2. Connect our local repo (add a remote)
+3. Push up our changes to Github
+
+
+                            Adding a New Remote
+============================================================
+A remote is really two things: a URL and a label. To add a new remote, we need to provide both to Git
+
+git remote <name> <url>  => git remote add origin <url>
+
+
+                            ORIGIN
+============================================================
+Origin is a conventional Git remote name, but it is not at all special. It's just a name for a URL.
+
+When we clone a Github repo, the default remote name setup for us is called origin. We can change it. Most peaople just leave it.
+
+
+                            OTHER COMMANDS
+============================================================
+
+git remote rename <old name><new name>
+
+git remote remove <name>
+
+                            PUSHING
+============================================================
+Now that we have a remote set up, let's push some work up to Github! To do this, we need to use the git push command.
+
+We need to specify the remote we want to push up to AND the specific local branch we want to push up to that remote.
+
+git push <remote> <branch>
+
+popular command is like this:
+git push origin master  -> it tells git to push up the master branch to our origin remote.
+
+
