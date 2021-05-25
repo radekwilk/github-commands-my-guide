@@ -10,3 +10,13 @@ git clone <url>  -> Git will retrive all the files associated with the repositor
 
 In addition, Git initializes a new repository on our machine, giving us access to the full Git history of the cloned project.
 
+                            ADDING SSH KEY
+============================================================
+Follow Github docs to do so
+
+
+                            Viewing remote
+============================================================
+To view any existing remotes for our repository, we can run git remote or git remote -v (verbose, for more info)
+
+This just dsiplays a list of remotes. If we haven't added any remotes yes, we will not see anything
