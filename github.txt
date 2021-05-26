@@ -29,15 +29,6 @@ If we already have an exisiting repo locally that we want to get on Github...
 3. Push up our changes to Github
 
 
-                        OPTION 2 - Start from scratch
-============================================================
-If we haven't begun work on our local repo, we can ...
-1. Create a brand new repo on Github
-2. Clone it down to our machine
-3. Do some work locally
-3. Push up our changes to Github
-
-
                             Adding a New Remote
 ============================================================
 A remote is really two things: a URL and a label. To add a new remote, we need to provide both to Git
@@ -91,6 +82,22 @@ Once we've set the upstream for a branch, we can use the git push shorthand whic
 ============================================================
 While we often want to push a local branch up to a remote branch of the same name, we do not have to! To push our local pankace branch up to a remote branch called waffle we could do:
 git push origin pancake:waffle
+
+
+                            Change master branch to main
+============================================================
+git branch -M main   -> it will change master branch to main
+       or
+git branch -M master   -> it will change main branch to master
+
+
+                            OPTION 2 - Start from scratch
+============================================================
+If we haven't begun work on our local repo, we can ...
+1. Create a brand new repo on Github
+2. Clone it down to our machine
+3. Do some work locally
+3. Push up our changes to Github
 
 
     
