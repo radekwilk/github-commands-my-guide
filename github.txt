@@ -78,4 +78,10 @@ Running git push -u origin master sets the upstream of the local mster branch so
 Once we've set the upstream for a branch, we can use the git push shorthand which will push our current branch to the upstream. 
 
 
+                            PUSH in DETAILS
+============================================================
+While we often want to push a local branch up to a remote branch of the same name, we do not have to! To push our local pankace branch up to a remote branch called waffle we could do:
+git push origin pancake:waffle
+
+
     
