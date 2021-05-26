@@ -29,6 +29,15 @@ If we already have an exisiting repo locally that we want to get on Github...
 3. Push up our changes to Github
 
 
+                        OPTION 2 - Start from scratch
+============================================================
+If we haven't begun work on our local repo, we can ...
+1. Create a brand new repo on Github
+2. Clone it down to our machine
+3. Do some work locally
+3. Push up our changes to Github
+
+
                             Adding a New Remote
 ============================================================
 A remote is really two things: a URL and a label. To add a new remote, we need to provide both to Git
