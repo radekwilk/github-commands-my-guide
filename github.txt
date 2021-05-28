@@ -104,3 +104,6 @@ If we haven't begun work on our local repo, we can ...
 ============================================================
 git branch -r  -> this will allow view remote branches our local repository knows about.
     
+                            SWITCHING TO RMOTE BRANCH
+============================================================
+git switch origin/master   -> will switch branch to our branch in Github repo.
