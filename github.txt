@@ -100,4 +100,7 @@ If we haven't begun work on our local repo, we can ...
 3. Push up our changes to Github
 
 
+                            REMOTE BRANCHES
+============================================================
+git branch -r  -> this will allow view remote branches our local repository knows about.
     
