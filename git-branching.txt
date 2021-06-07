@@ -29,6 +29,7 @@ Current branch always will have * next to it
 
 git branch  -> this will show us all branches in our repo
 git branch -v   -> this will show us all branches in our repo, with latest commint info
+git branch -r   -> this will show us all remote branches
 
                     CREATING BRANCHES
 ================================================================
