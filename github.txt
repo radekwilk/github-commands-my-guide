@@ -115,7 +115,7 @@ git switch origin/master   -> will switch branch to our branch in Github repo.
 
 git 
 
-                            GIT FETCH and GIT PULL
+                                   GIT FETCH
 ============================================================
 FETCHING - Fetching allows us to download chnages from a remote repository, BUT those changes will not be automatically integrated into our working files.
 
@@ -133,3 +133,27 @@ git fetch <remote><branch>
 For example, git fetch origin master would retrive the latest information from the master branch on the origin remote repository.
 
 SO now have all that changes on my local machine, but if I would like to see them I have to checkout origin/master. My master branch is untached. 
+
+
+                                   GIT PULL
+============================================================
+
+git pull is another command we can use to retrive changes from a remote repository. Unlike fetch, pull actually updates our HEAD branch with whatever changes are retrived from the remote.
+
+"go and download data from Github AND immediately update my local repo with those changes"
+
+We can this of git pull as :
+
+git pull  = git fetch(update the remote tracking branch with the latest changes from the remote repository) + git merge(update mu current branch with whatever changes are on the remote tracking branch)
+
+git pull -> to pull, we specify the particular remote and branch we want to pull using git pull <remote><branch>. Just like with git merge, it matters WHERE we run this command from. Whatever branch we run it from is where the changes will be merged into.
+
+git pull origin master would fetch the latest information from the origin's master branch and merge those changes into our current branch.
+
+PULLS CAN RESULt IN MERGE CONFLICTS!!!
+
+If we run git pull witout specifying a particular remote or branch to pull from, git assumes the following:
+ - remote will default to origin;
+ - branch will default to whatever tracking connection is configured for your current branch.
+
+ Note: this behaviour can be configured, and tracking connections can be changed manually. Most people don't mess with that stuff. 
