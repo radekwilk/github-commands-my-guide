@@ -157,3 +157,23 @@ If we run git pull witout specifying a particular remote or branch to pull from,
  - branch will default to whatever tracking connection is configured for your current branch.
 
  Note: this behaviour can be configured, and tracking connections can be changed manually. Most people don't mess with that stuff. 
+
+
+                             ADDING COLLABORATORS
+============================================================
+
+We can add Collaboarators to our repositories. We need to go to the repository settings and then to the Manage Access option.
+
+
+                                   READMEs
+============================================================
+
+A README file is used to communicate important information about a repository including:
+  - what the project does;
+  - How to run the project;
+  - Why it's noteworthy;
+  - Who maintains the project;
+
+README are Markdown files, ending with the .md extension. Markdown is a convinient syntax to generate formatted text. It's easy to pick up.
+
+
