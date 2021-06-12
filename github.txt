@@ -176,4 +176,13 @@ A README file is used to communicate important information about a repository in
 
 README are Markdown files, ending with the .md extension. Markdown is a convinient syntax to generate formatted text. It's easy to pick up.
 
+Useful link:
+https://daringfireball.net/projects/markdown/
+
+We can use https://markdown-it.github.io as example
+
+
+                                  GITHUB GISTS
+============================================================
+Github Gists are a simple way to share code snippets and useful fragments with others. Gists are much easier to create, but offer far fewer features than a typical Github repository.
 
