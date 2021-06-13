@@ -186,3 +186,19 @@ We can use https://markdown-it.github.io as example
 ============================================================
 Github Gists are a simple way to share code snippets and useful fragments with others. Gists are much easier to create, but offer far fewer features than a typical Github repository.
 
+
+                                  GITHUB PAGES
+============================================================
+Github pages are public webpages that are hosted and published via Github. They allow you to create a website simply by pushing your code to Github.
+
+Github Pages is a hosting service for static webpages, so it does not support server-side code like Python, Ruby or Node. Just HTML, CSS and JS!
+
+We can check more in here:
+https://pages.github.com
+
+When setting up webpage on Github, do it on new branch, and most of the time we would call that branch gh-pages
+
+All we need to do, open you repo, go to settings, scroll down to Github pages and then select the branch were you have your index.html page
+
+
+
