@@ -222,10 +222,34 @@ While is's nice and easy to only work on the master branch, this leads to some s
 
 
                       BRANCHES WORKFLOW - WORKING ON FEATURE BRANCHES
-============================================================
+========================================================================================
 
 Rather than working directly on master/main, all new development should be done on separate branches!
 
 1. Treat master/main branch as the official project history
 2. Multiple teammates can collaborate on a single feature ans share code back and forth without  polluting the master/main branch
 3. Master/main branch won't contain broken code (or at least, it won't unless someone messes up)
+
+
+                           MERGING IN FEATURE BRANCHES
+========================================================================================
+At some point the work on feature branch will need to be merged in to the master branch! There are a couple of options for how to do this...
+
+1. Merge at will, without any sort of discussion with teammates. JUST DO IT WHENEVER YOU WANT. 
+2. Send an email or chat message or something to your team to discuss if the changes should be merged in. 
+3. Pull request.
+
+                                    PULL REQUEST
+========================================================================================
+
+Pull requests are a feature build in to products like Github & Bitbucket. They are not native to GIT itself.
+They allow developers to alert team-members to new work that needs to be reviewed. They provide a mechanism to approve or reject the work on a given branch. They also help facilitate discusion and feedback on the specified commits.
+
+PULL REQUEST - THE WORKFLOW:
+  1. Do some work locally on a feature branch
+  2. Push up the feature branch to Github
+  3. Open a pull request using the feature branch just pushed up to the Github
+  4. Wait for the PR (PR = pull request) to be approved and merged. Start a discussion on the PR. This part depends on the team structure.
+
+
+
