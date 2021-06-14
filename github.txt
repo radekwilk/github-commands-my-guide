@@ -252,4 +252,20 @@ PULL REQUEST - THE WORKFLOW:
   4. Wait for the PR (PR = pull request) to be approved and merged. Start a discussion on the PR. This part depends on the team structure.
 
 
+                              MERGING PULL REGUEST WITH CONFLICTS
+========================================================================================
+
+1. Switch to the branch in question. Merge in master and resolve the conflicts
+    * git fetch origin
+    * git switch my-new-feature-branch
+    * git merge master
+    * fix conflicts
+
+2. Switch to master. Merge in the feature-branch (now with no conflicts). Push changes up to Github.
+
+                             BRANCH PROTECTION RULE
+========================================================================================
+
+We should add branch protecting rule when giving pull requests . Define branch protection rules to disable force pushing, prevent branches from being deleted, and optionally require status checks before merging. It all can be set up in Settings/Branches/Add rule
+
 
