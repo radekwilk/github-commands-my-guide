@@ -221,3 +221,11 @@ While is's nice and easy to only work on the master branch, this leads to some s
   3. The only way to collaborate on a feature together with another teammate is to push incomplete code to master. Other teammates now have broken code...
 
 
+                      BRANCHES WORKFLOW - WORKING ON FEATURE BRANCHES
+============================================================
+
+Rather than working directly on master/main, all new development should be done on separate branches!
+
+1. Treat master/main branch as the official project history
+2. Multiple teammates can collaborate on a single feature ans share code back and forth without  polluting the master/main branch
+3. Master/main branch won't contain broken code (or at least, it won't unless someone messes up)
