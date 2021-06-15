@@ -269,3 +269,29 @@ PULL REQUEST - THE WORKFLOW:
 We should add branch protecting rule when giving pull requests . Define branch protection rules to disable force pushing, prevent branches from being deleted, and optionally require status checks before merging. It all can be set up in Settings/Branches/Add rule
 
 
+                             FORK & CLONE ANOTHER WORKFLOW
+========================================================================================
+
+The "fork and clone" workflow is different from anything we've seen so far. Instead of just one centralized Github repository, every developer has their own Github repository in addition to the main repo. Developers make changes and push to their own forks before making pull requests.
+
+It's very commonly used on large open-source-projects where there may br thousands of contributors with only a couple of maintainers.
+
+      FORKIG:
+         Github (and similar tools) allow us to create personal copies of the other peoples' repository. We call those copies a "fork" of the original.
+
+         When we fork a repo, we are basically asking Github "Make me my own copy of this repo please"
+
+         As with pull requests, forking is not a Git feature. The ability to fork is implemented by Github.
+
+         IF WE WANT TO WORK ON FORKED PROJECT, IT IS BRIEF SUMMARY:
+            1. Fork the project
+            2. Clone the fork
+            3. Add upstream remote
+            4. Do some work
+            5. Push to origin
+            6. Open pull request
+
+          HOW TO ADD UPSTREAM remote?
+          1. clone the origin repo
+          2. Add upstream remote: git remote add upstream url-to-origin-repo
+
