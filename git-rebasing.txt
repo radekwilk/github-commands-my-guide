@@ -1,0 +1,44 @@
+                             REBASING
+===================================================================
+
+It's actually very usefull, as long as we know when NOT to use it. Rebasing is an alternative to merging. 
+There are two main ways to use the git rebase command:
+   - as an alternative to merging;
+   - as a cleanup tool.
+
+Instead of using a merge commit, rebasing rewrites history by creating new commits for each of the original feature branch commits.
+
+for we switch to our feature branch and rebase master:
+
+      git switch feature
+      git rebase master
+
+When rebasing with conflicts, just follow the instruction on git. Most of the time after making changes, we use git add fileName and then git rebase --continue   (follow the instruction)
+
+WHY REBASE? 
+     We can get a much 'cleaner' project history. No unnecessary commits! We end up with linear project history.
+
+WARNING!!!!!!!
+
+     Never rebase commits that have been shared with others. If you have already pushed commits up to Github...DO NOT rebase them unless you are positive no one on the team is using those commits.
+
+
+                            REWRITTING HISTORY - USE OF INTERACTIVE REBASE    
+===================================================================
+
+Sometimes we want to rewrite, delate, rename, or even reorder commits (before sharing them). We can do this using GIT REBASE
+
+INTERACTIVE REBASE
+   
+     Running git rebase with the -i option will enter the interactive mode, which allows us to edit commits, add files, drop commits, etc. Note that we need to sepcify how far back we want to rewrite commits.
+
+     Also, notice that we are not rebasing onto another branch. Instead, we are rebasing a series of commits onto the HEAD they currently are based on.
+
+     LIke THIS: >  git rebase -i HEAD~4
+
+     Then our code editor will open and we will see a list of all commits alongide a list of commands that we can chose from. Here are a couple of the more commonly used commands:
+        * pick - use the commit
+        * reword - use the commit, but edit the commit message 
+        * edit - use commit, but stop for amending
+        * fixup - use commit contents but meld it into previous commit and discard the commit message
+        * drop - remove commit
