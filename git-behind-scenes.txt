@@ -24,10 +24,68 @@ For example refs/heads/master contains the commit hash of the last commit on the
 
 Refs also contains a refs/tags folder which contains one file each tag in the repo.
 
-                            HEAD
+                                HEAD
 =========================================================================
 
 HEAD is just a text file that keeps track of where HEADS points. If it contains refs/heads/master, this means the HEAD is pointing to the master branch.
 
 If detached HEAD, the HEAD file contains a commit hash instead of a branch reference.
+
+
+                                OBJECTS FOLDER
+=========================================================================
+The objects directory contains all the repo files. This is where Git stores the bakups of files, the commits in a repo, and more.
+
+This files are all compressd and encrypted, so they won't look like much!
+
+                                    GIT DATABASE
+=========================================================================
+Git is a key-value data store. We can insert any kind of contrnt into Git repository, and Git will hand us back a unique key we can later use to retrive that content.
+
+These keys that we get back are SHA-1 checksums.
+
+
+                                    LET'S TRY HASH
+=========================================================================
+
+The git hash-object command takes some data, stored in our .git/objects dictionary and gives us back the unique SHA-1 hash that refers to that data object.
+
+In the simplets form (shown on the right), Git simply takes some content and return unique key that would be used to store our object. But it does not actually store anything.
+
+     git hash-object <file>
+
+The --stdin option tells hash-object to use the content from stdin rather than a file. In our example it will hash the word 'hello'
+
+The echo command simply repeats whatever we tell it to repeat to the terminal. We pipe that output of echo to git hash-object
+
+            echo 'hello' | git hash-object --stdin
+
+            if we use -w flag, it will write the hash into object file (has is a key to git database)
+
+            echo 'hello' | git hash-object --stdin -w
+
+
+Retriving it from database:
+
+            git cat-file -p <object-hash>
+
+Now that we have data stored in our Git object database, we can try to retrive it using the git cat-file command.
+
+The -p option tells Git to pretty print contents of the object based on its type.
+
+
+                                BLOBS
+=========================================================================
+
+Git blobs (binary large objects) are the object type Git uses to store the contents of files in a given repository. Blobs don't even include the filenames of each file or any other data. They just store the content of a file!
+
+                                TREES
+=========================================================================
+
+Trees are Git objects used to store the contents of a directory. Each tree contains pointers that can refer to blobs and to other trees. Each entry in a tree contains ths SHA-1 hash of a blob or tree, as well as the mode, type, and filename.
+
+                                COMMITS
+=========================================================================
+
+Commit objects combine a tree object along with information about the context that led to the current tree. Commits atore a reference to parnt commit(s), the author, the commiter, and of course the commit message!
 
