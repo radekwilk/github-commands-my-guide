@@ -8,3 +8,21 @@ Any configuratration variables that we change in the file will be applied across
 
 We can also alter configuration variables from the command line if prefered.
 
+                            ADDING ALIASES
+====================================================================
+
+We can easily set up Git aliases to make our Git experiance a bit simpler ans faster.
+
+For example, we could define an alias "git ci" instead of having to type "git commit"
+
+Or we could define a custom git log command that prints out a custom formatted commit log.
+
+For example:
+   
+     [alias]
+        s = status
+        l = log
+
+We can also do it from command line, and it will be like this:
+
+      git config --global alias.b 'branch'
