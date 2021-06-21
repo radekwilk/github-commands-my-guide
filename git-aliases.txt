@@ -1,0 +1,10 @@
+                            GIT ALIASES
+====================================================================
+
+Aliases can be set in git global configuration file.
+
+Git looks for the global config file at either ~/.gitconfig or ~/.config/git/config.
+Any configuratration variables that we change in the file will be applied across all Git repos.
+
+We can also alter configuration variables from the command line if prefered.
+
