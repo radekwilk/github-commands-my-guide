@@ -25,4 +25,15 @@ For example:
 
 We can also do it from command line, and it will be like this:
 
-      git config --global alias.b 'branch'
+      git config --global alias.b 'branch'  => this will set b as alias for git branch
+
+                             ALIASES WITH ARGUMENTS
+====================================================================
+
+Useful links:
+
+https://www.durdn.com/blog/2012/11/22/must-have-git-aliases-advanced-examples/
+
+https://github.com/GitAlias/gitalias
+
+https://gist.github.com/mwhite/6887990
