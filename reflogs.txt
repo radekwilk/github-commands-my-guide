@@ -33,5 +33,44 @@ For example, to view the logs for the tip of the main branch we could run git re
 
 We can access specific git refs is name@{qualifier}. We can use this syntax to access specific ref pointers and can pass them to other commands including checkout, reset, and merge.
 
+We can do somethig like this:
+   
+       git checkout HEAD@{2}
 
+We can also check what happened between two stages, like this:
+
+      git diff HEAD@{0} HEAD@{5}
             
+
+                                TIME REFERENCES
+====================================================================
+
+Every entry in the reference logs has a timestamp associated with it. We can filter reflogs entries by time/date by using time qualifiers like:
+    - 1.day.ago
+    - 3.minutes.ago
+    - yesterday
+    - Fri, 12 Feb 2021 14:06:21-0800
+
+    examples:
+
+       git reflog master@{one.week.ago}
+
+       git checkout bugfix@{2.days.ago}
+
+       git diff main@{0} main@{yesterday}
+
+       git reflog master@{four.weeks.ago}
+
+
+                                REFLOGS RESCUE
+====================================================================
+
+We can sometimes use reflog entries to access commits that seem lost and are not appearing in git log.
+
+We can check in 
+
+     git reflog show <branch-name> to see commints which are not anymore in our log
+
+And then, we can copy commit you want to get back and the use:
+
+     git reset --hard <commit-hash>
